@@ -1,0 +1,87 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Nguyễn Văn A",
+      "dob": "2003-04-12",
+      "gender": "Nam"
+    },
+    {
+      "id": "2",
+      "name": "Trần Thị B",
+      "dob": "2002-08-30",
+      "gender": "Nữ"
+    },
+    {
+      "id": "3",
+      "name": "Lê Văn C",
+      "dob": "2004-01-10",
+      "gender": "Nam"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "iPhone 15 Pro",
+      "price": 32000000,
+      "image": "https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S24",
+      "price": 28000000,
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/s/ss-s24-ultra-xam-222.png"
+    },
+    {
+      "id": "3",
+      "name": "Xiaomi 14 Ultra",
+      "price": 25000000,
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-14-ultra_3.png"
+    }
+  ],
+  "categories": [
+    {
+      "id": "2",
+      "image": "https://jeantienmai.com/images/thumbs/2018/10/quan-jean-dai-nu-86.jpeg",
+      "name": "Quần dài & Quần jean",
+      "slug": "quan-dai-quan-jean",
+      "parentCategory": "Bé gái"
+    },
+    {
+      "id": "3",
+      "image": "https://vanphongphammucinht.com/wp-content/uploads/2016/05/Kh%C4%83n-m%E1%BA%B7t.jpg",
+      "name": "Khăn mặt",
+      "slug": "khan-mat",
+      "parentCategory": "Bé gái"
+    },
+    {
+      "id": "4",
+      "image": "https://zerdio.com.vn/wp-content/uploads/2023/10/Khan-Quang-Choang-Co-Nu-Woodonble-KN011-Phong-Cach-Han-Quoc.jpg",
+      "name": "Khăn quàng cổ",
+      "slug": "khan-quang-co",
+      "parentCategory": "Bé gái"
+    },
+    {
+      "id": "5",
+      "image": "https://product.hstatic.net/1000312752/product/548e103d31d2952b748f18f04406a434_37d5015da5cd409790f296c97c279909_89c4cdbacbc647a9a61c1b22fb4fa7b4.png",
+      "name": "Áo polo",
+      "slug": "ao-polo",
+      "parentCategory": "Bé gái"
+    },
+    {
+      "name": "f",
+      "slug": "3",
+      "parentCategory": "3",
+      "image": "33",
+      "id": "odMeocRouv0"
+    },
+    {
+      "name": "f",
+      "slug": "3",
+      "parentCategory": "3",
+      "image": "",
+      "id": "HOSVyjLEOYc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

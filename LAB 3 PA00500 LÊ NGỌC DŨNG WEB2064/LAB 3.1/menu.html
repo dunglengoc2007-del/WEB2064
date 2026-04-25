@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu đồ uống</title>
+
+    <!-- Favicon tránh lỗi 404 -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1046/1046784.png">
+
+    <!-- CSS đơn giản -->
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .container {
+            width: 400px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        input {
+            padding: 8px;
+            width: 60%;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .delete {
+            color: red;
+            cursor: pointer;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>☕ Menu đồ uống</h2>
+
+        <!-- Input thêm -->
+        <input type="text" id="newDrink" placeholder="Nhập đồ uống...">
+        <button onclick="addDrink()">Thêm</button>
+
+        <!-- Danh sách -->
+        <ul id="drinkList"></ul>
+    </div>
+
+    <script>
+        let drinks = ["Cà phê", "Trà sữa", "Nước cam", "Sinh tố", "Nước lọc"];
+
+        function renderList() {
+            let ul = document.getElementById("drinkList");
+            ul.innerHTML = "";
+
+            drinks.forEach((drink, index) => {
+                let li = document.createElement("li");
+
+                li.innerHTML = `
+                ${drink}
+                <span class="delete" onclick="deleteDrink(${index})">❌</span>
+            `;
+
+                ul.appendChild(li);
+            });
+        }
+
+        function addDrink() {
+            let input = document.getElementById("newDrink");
+            let value = input.value.trim();
+
+            if (value === "") {
+                alert("Vui lòng nhập tên đồ uống!");
+                return;
+            }
+
+            drinks.push(value);
+            input.value = "";
+            renderList();
+        }
+
+        function deleteDrink(index) {
+            drinks.splice(index, 1);
+            renderList();
+        }
+
+        // chạy lần đầu
+        renderList();
+    </script>
+
+</body>
+
+</html>

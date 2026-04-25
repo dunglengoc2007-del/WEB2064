@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quản lý danh mục</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: center;
+      }
+
+      img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 300px;
+        margin-bottom: 20px;
+      }
+      label {
+        display: flex;
+        flex-direction: column;
+      }
+
+      input,button {
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+      button {
+        background: #007bff;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🗂️ Quản lý danh mục</h1>
+
+    <form id="category-form">
+      <!-- thêm name cũng được, nhưng JS sử dụng getElementById -->
+      <input type="hidden" id="id" name="id" />      
+      <label for="name">Tên danh mục:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Ví dụ: Cà phê"
+        required
+      />
+      <label for="slug">Slug:</label>
+      <input type="text" id="slug" name="slug" placeholder="Ví dụ: ca-phe" required />
+      <label for="parentCategory">Danh mục cha:</label>
+      <input
+        type="text"
+        id="parentCategory"
+        name="parentCategory"
+        placeholder="Để trống nếu không có"
+      />
+      <label for="image">Link hình ảnh:</label>
+      <input type="text" id="image" name="image" placeholder="https://example.com/image.jpg" />
+      <button type="submit">Lưu danh mục</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Hình ảnh</th>
+          <th scope="col">Tên</th>
+          <th scope="col">Slug</th>
+          <th scope="col">Danh mục cha</th>
+          <th scope="col">Hành động</th>
+        </tr>
+      </thead>
+      <tbody id="category-list"></tbody>
+    </table>
+
+    <script src="categories.js"></script>
+  </body>
+</html>
