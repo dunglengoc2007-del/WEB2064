@@ -1,0 +1,133 @@
+/* ===== GIỎ HÀNG - KHÔNG XUNG ĐỘT ===== */
+.cart-container {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px 40px;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+/* --- BẢNG --- */
+.cart-container .cart-table-wrapper {
+    overflow-x: auto;
+}
+
+.cart-container .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.cart-container .cart-table th {
+    background: #f4f6f8;
+    color: #333;
+    text-align: left;
+    padding: 14px;
+    font-weight: 600;
+    border-bottom: 2px solid #e0e0e0;
+    font-size: 15px;
+}
+
+.cart-container .cart-table td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+    font-size: 15px;
+    color: #444;
+}
+
+.cart-container .cart-table tr:hover {
+    background: #fafbfc;
+    transition: background 0.3s ease;
+}
+
+/* --- ẢNH --- */
+.cart-container .cart-table img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* --- NÚT TĂNG GIẢM --- */
+.cart-container .qty-btn {
+    cursor: pointer;
+    background: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin: 0 4px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.cart-container .qty-btn:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* --- NÚT XOÁ --- */
+.cart-container .remove-btn {
+    background: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cart-container .remove-btn:hover {
+    background: #d9363e;
+}
+
+/* --- TỔNG CỘNG --- */
+.cart-container .cart-summary {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cart-container .cart-summary h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+.cart-container #total {
+    color: #e63946;
+    font-weight: 700;
+}
+
+/* --- NÚT THANH TOÁN --- */
+.cart-container .checkout-btn {
+    background: #6b412c;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.cart-container .checkout-btn:hover {
+    background: brown;
+    transform: translateY(-1px);
+}

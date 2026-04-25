@@ -1,0 +1,117 @@
+.order-page h1 {
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    margin-top: 1rem;
+}
+
+.order-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --- CARD ĐƠN HÀNG --- */
+.order-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.order-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* --- HEADER ĐƠN HÀNG --- */
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.order-id {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.order-total strong {
+    font-size: 1.1em;
+    color: #e63946;
+}
+
+/* --- TRẠNG THÁI --- */
+.status {
+    padding: 4px 10px;
+    border-radius: 12px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.status.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status.completed {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status.cancelled {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* --- THÔNG TIN NGƯỜI DÙNG --- */
+.user-info {
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    color: #444;
+}
+
+/* --- SẢN PHẨM TRONG ĐƠN --- */
+.order-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px;
+    background: #fcfcfc;
+}
+
+.item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.item-info h4 {
+    margin: 0;
+    font-size: 1em;
+    color: #1a1a1a;
+}
+
+.item-info p {
+    margin: 3px 0;
+    font-size: 0.9em;
+    color: #555;
+}

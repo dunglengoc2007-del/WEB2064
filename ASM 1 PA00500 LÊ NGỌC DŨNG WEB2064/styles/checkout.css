@@ -1,0 +1,129 @@
+/* ====== CHECKOUT PAGE ====== */
+.checkout-container {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+}
+
+.checkout-title {
+    text-align: center;
+    font-size: 28px;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+}
+
+.checkout-section {
+    margin-bottom: 40px;
+}
+
+/* === FORM === */
+.checkout-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.checkout-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.checkout-form input {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+.checkout-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+.submit-order {
+    grid-column: 1 / -1;
+    justify-self: center;
+    background: #6b412c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 28px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.submit-order:hover {
+    background: #6b412c;
+    transform: translateY(-1px);
+}
+
+/* === TABLE === */
+.checkout-table-wrapper {
+    overflow-x: auto;
+}
+
+.checkout-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+.checkout-table th {
+    background: #f4f6f8;
+    color: #333;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.checkout-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    color: #444;
+    vertical-align: middle;
+}
+
+.checkout-table img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.checkout-table tr:hover {
+    background: #fafbfc;
+}
+
+/* === TOTAL === */
+.checkout-total {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.checkout-total h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.checkout-total span {
+    color: #e63946;
+    font-weight: bold;
+}

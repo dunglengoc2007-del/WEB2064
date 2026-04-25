@@ -1,0 +1,36 @@
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 15px;
+}
+
+.order-table th,
+.order-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.order-table th {
+    background: #f3f3f3;
+}
+
+.order-table select {
+    padding: 5px;
+    border-radius: 4px;
+}
+
+button {
+    margin-right: 6px;
+    padding: 6px 10px;
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #125a9c;
+}

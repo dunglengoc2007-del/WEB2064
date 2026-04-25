@@ -1,0 +1,88 @@
+.admin-main {
+    padding: 20px;
+}
+.cate-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 20px;
+    margin-bottom: 25px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.cate-form .form-row {
+    display: flex;
+    flex-direction: column;
+}
+.cate-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.cate-form input,
+.cate-form select {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.btn-save {
+    background: #6d4c41;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    grid-column: span 2;
+}
+.btn-save:hover {
+    background: #5d4037;
+}
+.btn-reset {
+    background: #bdbdbd;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    grid-column: span 2;
+}
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.admin-table th,
+.admin-table td {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    text-align: left;
+}
+.admin-table th {
+    background: #efebe9;
+}
+.admin-table td:last-child {
+    text-align: center;
+}
+.btn-edit,
+.btn-delete {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+.btn-edit {
+    background: #8d6e63;
+}
+.btn-delete {
+    background: #d32f2f;
+}
+.btn-edit:hover {
+    background: #6d4c41;
+}
+.btn-delete:hover {
+    background: #b71c1c;
+}

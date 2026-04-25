@@ -1,0 +1,95 @@
+.thankyou-container {
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.thankyou-card {
+    background: white;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    max-width: 480px;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.thankyou-card h1 {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.thankyou-img {
+    width: 380px;
+    height: 300px;
+    object-fit: contain;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+
+p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.thankyou-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+    background: #6b412c;
+    color: white;
+    border: none;
+    padding: 12px 26px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.btn-outline {
+    background: white;
+    color: #6b412c;
+    border: 2px solid #6b412c;
+}
+
+.btn-outline:hover {
+    background: #6b412c;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}

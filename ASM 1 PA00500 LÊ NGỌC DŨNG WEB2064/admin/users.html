@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý người dùng</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/users.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-mug-hot"></i>
+                <h1>Admin - Susan Coffee & Tea</h1>
+            </div>
+
+            <nav>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                    <span>Trang chủ</span>
+                </a>
+                <a href="products.html">
+                    <i class="fas fa-box"></i>
+                    <span>Sản phẩm</span>
+                </a>
+                <a href="categories.html">
+                    <i class="fas fa-tags"></i>
+                    <span>Danh mục</span>
+                </a>
+                <a href="orders.html">
+                    <i class="fas fa-receipt"></i>
+                    <span>Đơn hàng</span>
+                </a>
+                <a href="users.html">
+                    <i class="fas fa-users"></i>
+                    <span>Người dùng</span>
+                </a>
+                <a href="login.html" id="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Đăng xuất</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <h2>Quản lý người dùng</h2><br>
+        <!-- Form thêm/sửa -->
+        <form id="user-form" class="user-form">
+            <input type="hidden" id="user-id">
+            <div class="form-row">
+                <label>Họ tên:</label>
+                <input type="text" id="user-name" required>
+            </div>
+            <div class="form-row">
+                <label>Email:</label>
+                <input type="email" id="user-email" required>
+            </div>
+            <div class="form-row">
+                <label>Mật khẩu:</label>
+                <input type="text" id="user-password" required>
+            </div>
+            <div class="form-row">
+                <label>Số điện thoại:</label>
+                <input type="text" id="user-phone">
+            </div>
+            <div class="form-row">
+                <label>Địa chỉ:</label>
+                <input type="text" id="user-address">
+            </div>
+            <div class="form-row">
+                <label>Vai trò:</label>
+                <select id="user-role">
+                    <option value="user">Người dùng</option>
+                    <option value="admin">Quản trị viên</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-save">Lưu</button>
+            <button type="button" class="btn-reset" id="reset-form">Nhập mới</button>
+        </form>
+
+        <!-- Danh sách người dùng -->
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Họ tên</th>
+                    <th>Email</th>
+                    <th>Vai trò</th>
+                    <th>Số điện thoại</th>
+                    <th>Địa chỉ</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody id="user-list"></tbody>
+        </table>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Susan Coffee & Tea - Trang quản trị</p>
+            <p class="made-with-love">
+                Made with <i class="fas fa-heart" style="color:#e74c3c"></i> &
+                <i class="fas fa-coffee" style="color:#8B4513"></i>
+            </p>
+            <a href="../users/index.html">Về trang người dùng</a>
+        </div>
+    </footer>
+
+    <script src="js/users.js"></script>
+</body>
+
+</html>

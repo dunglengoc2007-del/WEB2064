@@ -1,0 +1,638 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Cà phê",
+      "parent_id": null
+    },
+    {
+      "id": "2",
+      "name": "Trà sữa",
+      "parent_id": null
+    },
+    {
+      "id": "3",
+      "name": "Trà trái cây",
+      "parent_id": null
+    },
+    {
+      "id": "4",
+      "name": "Đồ ăn vặt",
+      "parent_id": null
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Cà phê sữa",
+      "price": 20000,
+      "cate_id": 1,
+      "detail": "Ngon đậm đà",
+      "image": "5-cach-pha-ca-phe-sua-tuoi-khong-duong-co.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "Cà phê đen",
+      "price": 18000,
+      "cate_id": 1,
+      "detail": "Đậm vị truyền thống",
+      "image": "Cach-pha-cafe-den-nong.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Bạc xỉu",
+      "price": 25000,
+      "cate_id": 1,
+      "detail": "Ngọt béo vị sữa",
+      "image": "bac_xiu_da.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Cappuccino",
+      "price": 35000,
+      "cate_id": 1,
+      "detail": "Phong cách Ý cổ điển",
+      "image": "capuchino-la-gi-17.png"
+    },
+    {
+      "id": "5",
+      "name": "Espresso",
+      "price": 30000,
+      "cate_id": 1,
+      "detail": "Đậm đặc, thơm nồng",
+      "image": "esspresso.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Trà sữa trân châu",
+      "price": 30000,
+      "cate_id": 2,
+      "detail": "Trân châu dẻo, sữa béo",
+      "image": "tra-sua-tu-lam.webp"
+    },
+    {
+      "id": "7",
+      "name": "Trà sữa matcha",
+      "price": 35000,
+      "cate_id": 2,
+      "detail": "Hương matcha Nhật Bản",
+      "image": "tra-sua-matcha.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Trà sữa khoai môn",
+      "price": 33000,
+      "cate_id": 2,
+      "detail": "Béo thơm vị khoai môn",
+      "image": "tra-sua-khoai-mon.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Trà sữa Thái Xanh",
+      "price": 30000,
+      "cate_id": 2,
+      "detail": "Đậm vị trà Thái",
+      "image": "cach-lam-tra-sua-thai-xanh-ngon-me-ly-tai-nha_1024x1024.webp"
+    },
+    {
+      "id": "10",
+      "name": "Trà sữa socola",
+      "price": 32000,
+      "cate_id": 2,
+      "detail": "Ngọt nhẹ, vị cacao",
+      "image": "cach-lam-tra-sua-socola.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Trà đào cam sả",
+      "price": 30000,
+      "cate_id": 3,
+      "detail": "Tươi mát, thanh vị",
+      "image": "cach-lam-tra-dao-cam.webp"
+    },
+    {
+      "id": "12",
+      "name": "Trà vải",
+      "price": 28000,
+      "cate_id": 3,
+      "detail": "Thơm ngọt vị vải",
+      "image": "Tra-Vai_KoCTA_2.png"
+    },
+    {
+      "id": "13",
+      "name": "Trà chanh mật ong",
+      "price": 27000,
+      "cate_id": 3,
+      "detail": "Giải khát, thanh lọc",
+      "image": "Cach-lam-tra-chanh-gung-mat-ong.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Trà xoài",
+      "price": 29000,
+      "cate_id": 3,
+      "detail": "Ngọt dịu vị xoài chín",
+      "image": "Tra-xoai-chanh-day-02-scaled.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Trà việt quất",
+      "price": 33000,
+      "cate_id": 3,
+      "detail": "Đậm hương việt quất",
+      "image": "Tra-xoai-chanh-day-02-scaled.jpg"
+    },
+    {
+      "id": "16",
+      "name": "Bánh tráng trộn",
+      "price": 25000,
+      "cate_id": 4,
+      "detail": "Đậm đà, giòn ngon",
+      "image": "banhtrangtron.jpg"
+    },
+    {
+      "id": "17",
+      "name": "Khoai tây chiên",
+      "price": 22000,
+      "cate_id": 4,
+      "detail": "Vàng giòn, béo ngậy",
+      "image": "2023_9_28_638315154313184024_cach-lam-khoai-tay-chien-1.webp"
+    },
+    {
+      "id": "18",
+      "name": "Phô mai que",
+      "price": 18000,
+      "cate_id": 4,
+      "detail": "Kéo sợi hấp dẫn",
+      "image": "pho-mai-que.webp"
+    },
+    {
+      "id": "19",
+      "name": "Cá viên chiên",
+      "price": 20000,
+      "cate_id": 4,
+      "detail": "Dai dai, giòn rụm",
+      "image": "ca-vien-chien.jpg"
+    },
+    {
+      "id": "20",
+      "name": "Tôm viên chiên",
+      "price": 22000,
+      "cate_id": 4,
+      "detail": "Giòn tan, thơm hải sản",
+      "image": "tom-vien-singapore.jpg"
+    },
+    {
+      "id": "5JZXc5PFc1s",
+      "name": "Cà Phê",
+      "price": 0,
+      "cate_id": 2,
+      "detail": "ê",
+      "image": "ô"
+    },
+    {
+      "name": "Cà Phê",
+      "price": 0,
+      "cate_id": 2,
+      "detail": "ê",
+      "image": "ô",
+      "id": "a1gVLk36MD0"
+    },
+    {
+      "name": "Cà Phê",
+      "price": 100000,
+      "cate_id": 2,
+      "detail": "ê",
+      "image": "ô",
+      "id": "QPi-cyt9IXo"
+    },
+    {
+      "name": "Cà Phê",
+      "price": 100000,
+      "cate_id": 1,
+      "detail": "ê",
+      "image": "iphone-18-pro-max-4-1703.png",
+      "id": "KdMV5-A14qw"
+    },
+    {
+      "name": "scaiijf",
+      "price": 10000,
+      "cate_id": 1,
+      "detail": "okhfhfu",
+      "image": "iage.png",
+      "id": "4rGjyNuuFDU"
+    }
+  ],
+  "product_variants": [
+    {
+      "id": "1",
+      "product_id": 1,
+      "variant_name": "Size M",
+      "price": 20000,
+      "quantity": 10,
+      "image": "ca_phe_sua_m.jpg"
+    },
+    {
+      "id": "2",
+      "product_id": 2,
+      "variant_name": "Size M",
+      "price": 18000,
+      "quantity": 12,
+      "image": "ca_phe_den_m.jpg"
+    },
+    {
+      "id": "3",
+      "product_id": 3,
+      "variant_name": "Size M",
+      "price": 25000,
+      "quantity": 15,
+      "image": "bac_xiu_m.jpg"
+    },
+    {
+      "id": "4",
+      "product_id": 4,
+      "variant_name": "Size M",
+      "price": 35000,
+      "quantity": 10,
+      "image": "capuchino_m.jpg"
+    },
+    {
+      "id": "5",
+      "product_id": 5,
+      "variant_name": "Size M",
+      "price": 30000,
+      "quantity": 10,
+      "image": "espresso_m.jpg"
+    },
+    {
+      "id": "6",
+      "product_id": 6,
+      "variant_name": "Size M",
+      "price": 30000,
+      "quantity": 15,
+      "image": "tra_sua_tran_chau_m.jpg"
+    },
+    {
+      "id": "7",
+      "product_id": 7,
+      "variant_name": "Size M",
+      "price": 35000,
+      "quantity": 10,
+      "image": "tra_sua_matcha_m.jpg"
+    },
+    {
+      "id": "8",
+      "product_id": 8,
+      "variant_name": "Size M",
+      "price": 33000,
+      "quantity": 10,
+      "image": "tra_sua_khoai_mon_m.jpg"
+    },
+    {
+      "id": "9",
+      "product_id": 9,
+      "variant_name": "Size M",
+      "price": 30000,
+      "quantity": 15,
+      "image": "tra_sua_thai_xanh_m.jpg"
+    },
+    {
+      "id": "10",
+      "product_id": 10,
+      "variant_name": "Size M",
+      "price": 32000,
+      "quantity": 10,
+      "image": "tra_sua_socola_m.jpg"
+    },
+    {
+      "id": "11",
+      "product_id": 11,
+      "variant_name": "Size M",
+      "price": 30000,
+      "quantity": 10,
+      "image": "tra_dao_cam_sa_m.jpg"
+    },
+    {
+      "id": "12",
+      "product_id": 12,
+      "variant_name": "Size M",
+      "price": 28000,
+      "quantity": 10,
+      "image": "tra_vai_m.jpg"
+    },
+    {
+      "id": "13",
+      "product_id": 13,
+      "variant_name": "Size M",
+      "price": 27000,
+      "quantity": 10,
+      "image": "tra_chanh_mat_ong_m.jpg"
+    },
+    {
+      "id": "14",
+      "product_id": 14,
+      "variant_name": "Size M",
+      "price": 29000,
+      "quantity": 10,
+      "image": "tra_xoai_m.jpg"
+    },
+    {
+      "id": "15",
+      "product_id": 15,
+      "variant_name": "Size M",
+      "price": 33000,
+      "quantity": 10,
+      "image": "tra_viet_quat_m.jpg"
+    },
+    {
+      "id": "16",
+      "product_id": 16,
+      "variant_name": "Phần nhỏ",
+      "price": 25000,
+      "quantity": 15,
+      "image": "banh_trang_tron_m.jpg"
+    },
+    {
+      "id": "17",
+      "product_id": 17,
+      "variant_name": "Phần nhỏ",
+      "price": 22000,
+      "quantity": 15,
+      "image": "khoai_tay_chien_m.jpg"
+    },
+    {
+      "id": "18",
+      "product_id": 18,
+      "variant_name": "5 que",
+      "price": 18000,
+      "quantity": 20,
+      "image": "pho_mai_que_m.jpg"
+    },
+    {
+      "id": "19",
+      "product_id": 19,
+      "variant_name": "Phần nhỏ",
+      "price": 20000,
+      "quantity": 15,
+      "image": "ca_vien_chien_m.jpg"
+    },
+    {
+      "id": "20",
+      "product_id": 20,
+      "variant_name": "Phần nhỏ",
+      "price": 22000,
+      "quantity": 15,
+      "image": "tom_vien_m.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Nguyễn Đình Tú",
+      "email": "dinhtu20091998@gmail.com",
+      "password": "12",
+      "phone": "0336620188",
+      "address": "93 Nguyễn Văn Tỵ - Hoà Phước - Hoà Vang - Đà Nẵng",
+      "role": "user"
+    },
+    {
+      "name": "Nguyễn Đình Tú",
+      "email": "dinhtu2009199998@gmail.com",
+      "password": "admin1234",
+      "phone": "",
+      "address": "",
+      "role": "admin",
+      "id": "2"
+    },
+    {
+      "name": "Nguyễn Phi Trường",
+      "email": "dinhtu200919998@gmail.com",
+      "password": "1234",
+      "phone": "0336620188",
+      "address": "93 Nguyễn Văn Tỵ - Hoà Phước - Hoà Vang - Đà Nẵng",
+      "role": "user",
+      "id": "3"
+    },
+    {
+      "name": "Hai Ba Co",
+      "email": "Haibaco207@gmail.com",
+      "password": "123",
+      "phone": "",
+      "address": "",
+      "role": "admin",
+      "id": "cA50kGruggM"
+    },
+    {
+      "name": "Đức Lê Đình",
+      "email": "ducledinh963@gmail.com",
+      "password": "hai2007",
+      "phone": "òòđđđ̃đ̃",
+      "address": "Ò̃Òìì̃̃ì",
+      "role": "user",
+      "id": "Ta3fVsueJk8"
+    },
+    {
+      "name": "Nguyễn Hoàng Sơn",
+      "email": "hson97805@gmail.com",
+      "password": "1334",
+      "phone": "097465853",
+      "address": "thanh HOá",
+      "role": "admin",
+      "id": "tUVPtFZZFPw"
+    }
+  ],
+  "orders": [
+    {
+      "id": "a7dc",
+      "user": {
+        "name": "Nguyễn Đình Tú",
+        "email": "dinhtu20091998@gmail.com",
+        "phone": "0336620188",
+        "address": "93 Nguyễn Văn Tỵ - Hoà Phước - Hoà Vang - Đà Nẵng"
+      },
+      "total": 50000,
+      "items": [
+        {
+          "productId": 2,
+          "name": "Trà sữa trân châu",
+          "image": "tra-sua-tu-lam.webp",
+          "detail": "Thơm béo",
+          "variantId": 2,
+          "variant": "Size L",
+          "price": 30000,
+          "quantity": 1
+        },
+        {
+          "productId": 1,
+          "name": "Cà phê sữa",
+          "image": "5-cach-pha-ca-phe-sua-tuoi-khong-duong-co.jpeg",
+          "detail": "Ngon đậm đà",
+          "variantId": 1,
+          "variant": "Size M",
+          "price": 20000,
+          "quantity": 1
+        }
+      ],
+      "create_at": "2025-10-08T14:15:31.977Z",
+      "status": "pending"
+    },
+    {
+      "id": "3206",
+      "user": {
+        "name": "Nguyễn Thị Thu Thảo",
+        "email": "thuthao@gmail.com",
+        "phone": "0937888999",
+        "address": "111 Nguyễn Văn Linh"
+      },
+      "total": 38000,
+      "items": [
+        {
+          "productId": 2,
+          "name": "Cà phê đen",
+          "image": "Cach-pha-cafe-den-nong.jpg",
+          "detail": "Đậm vị truyền thống",
+          "variantId": 2,
+          "variant": "Size M",
+          "price": 18000,
+          "quantity": 1
+        },
+        {
+          "productId": 1,
+          "name": "Cà phê sữa",
+          "image": "5-cach-pha-ca-phe-sua-tuoi-khong-duong-co.jpeg",
+          "detail": "Ngon đậm đà",
+          "variantId": 1,
+          "variant": "Size M",
+          "price": 20000,
+          "quantity": 1
+        }
+      ],
+      "create_at": "2025-10-15T10:47:11.465Z",
+      "status": "pending"
+    },
+    {
+      "id": "39ad",
+      "user": {
+        "name": "Hồ Văn Phi",
+        "email": "tuyetnhung@gmail.com",
+        "phone": "0999777888",
+        "address": "11 Trần Quốc Tuấn"
+      },
+      "total": 80000,
+      "items": [
+        {
+          "productId": 1,
+          "name": "Cà phê sữa",
+          "image": "5-cach-pha-ca-phe-sua-tuoi-khong-duong-co.jpeg",
+          "detail": "Ngon đậm đà",
+          "variantId": 1,
+          "variant": "Size M",
+          "price": 20000,
+          "quantity": 1
+        },
+        {
+          "productId": 3,
+          "name": "Bạc xỉu",
+          "image": "bac_xiu_da.jpg",
+          "detail": "Ngọt béo vị sữa",
+          "variantId": 3,
+          "variant": "Size M",
+          "price": 25000,
+          "quantity": 1
+        },
+        {
+          "productId": 4,
+          "name": "Cappuccino",
+          "image": "capuchino-la-gi-17.png",
+          "detail": "Phong cách Ý cổ điển",
+          "variantId": 4,
+          "variant": "Size M",
+          "price": 35000,
+          "quantity": 1
+        }
+      ],
+      "create_at": "2025-10-15T10:48:49.097Z",
+      "status": "pending"
+    },
+    {
+      "id": "61cb",
+      "user": {
+        "name": "Lê Hà Như Ý",
+        "email": "nhuy@gmail.com",
+        "phone": "0556888333",
+        "address": "116 Nguyễn Huy Tưởng"
+      },
+      "total": 85000,
+      "items": [
+        {
+          "productId": 1,
+          "name": "Cà phê sữa",
+          "image": "5-cach-pha-ca-phe-sua-tuoi-khong-duong-co.jpeg",
+          "detail": "Ngon đậm đà",
+          "variantId": 1,
+          "variant": "Size M",
+          "price": 20000,
+          "quantity": 3
+        },
+        {
+          "productId": 3,
+          "name": "Bạc xỉu",
+          "image": "bac_xiu_da.jpg",
+          "detail": "Ngọt béo vị sữa",
+          "variantId": 3,
+          "variant": "Size M",
+          "price": 25000,
+          "quantity": 1
+        }
+      ],
+      "create_at": "2025-10-15T10:51:33.816Z",
+      "status": "pending"
+    },
+    {
+      "id": "0bf6",
+      "user": {
+        "name": "Nguyễn Phi Trường",
+        "email": "phitruong@gmail.com",
+        "phone": "0444888999",
+        "address": "116 Nguyễn Huy Tưởng"
+      },
+      "total": 640000,
+      "items": [
+        {
+          "productId": 1,
+          "name": "Cà phê sữa",
+          "image": "5-cach-pha-ca-phe-sua-tuoi-khong-duong-co.jpeg",
+          "detail": "Ngon đậm đà",
+          "variantId": 1,
+          "variant": "Size M",
+          "price": 20000,
+          "quantity": 9
+        },
+        {
+          "productId": 3,
+          "name": "Bạc xỉu",
+          "image": "bac_xiu_da.jpg",
+          "detail": "Ngọt béo vị sữa",
+          "variantId": 3,
+          "variant": "Size M",
+          "price": 25000,
+          "quantity": 10
+        },
+        {
+          "productId": 4,
+          "name": "Cappuccino",
+          "image": "capuchino-la-gi-17.png",
+          "detail": "Phong cách Ý cổ điển",
+          "variantId": 4,
+          "variant": "Size M",
+          "price": 35000,
+          "quantity": 6
+        }
+      ],
+      "create_at": "2025-10-15T10:54:32.891Z",
+      "status": "pending"
+    }
+  ],
+  "order_details": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}

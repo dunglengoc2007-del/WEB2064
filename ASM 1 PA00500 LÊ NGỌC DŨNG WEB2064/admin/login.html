@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập Admin - Susan Coffee & Tea</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-mug-hot"></i>
+                <h1>Admin - Susan Coffee & Tea</h1>
+            </div>
+
+            <nav>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                    <span>Trang chủ</span>
+                </a>
+                <a href="products.html">
+                    <i class="fas fa-box"></i>
+                    <span>Sản phẩm</span>
+                </a>
+                <a href="categories.html">
+                    <i class="fas fa-tags"></i>
+                    <span>Danh mục</span>
+                </a>
+                <a href="orders.html">
+                    <i class="fas fa-receipt"></i>
+                    <span>Đơn hàng</span>
+                </a>
+                <a href="users.html">
+                    <i class="fas fa-users"></i>
+                    <span>Người dùng</span>
+                </a>
+                <a href="login.html" id="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Đăng xuất</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="login">
+        <div class="login-container">
+            <div class="login-card">
+                <div class="login-header">
+                    <h2>Admin Login</h2>
+                    <p>Trang quản trị Susan Coffee & Tea</p>
+                </div>
+
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" id="email" placeholder="Nhập email..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password"><i class="fas fa-lock"></i> Mật khẩu</label>
+                        <input type="password" id="password" placeholder="Nhập mật khẩu..." required>
+                    </div>
+
+                    <button type="submit" class="login-btn">
+                        <i class="fas fa-sign-in-alt"></i> Đăng nhập
+                    </button>
+                </form>
+
+                <p class="note">Chỉ dành cho quản trị viên hệ thống</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Susan Coffee & Tea - Trang quản trị</p>
+            <p class="made-with-love">
+                Made with <i class="fas fa-heart" style="color:#e74c3c"></i> &
+                <i class="fas fa-coffee" style="color:#8B4513"></i>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

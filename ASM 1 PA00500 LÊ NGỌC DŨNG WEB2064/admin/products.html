@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sản phẩm</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-mug-hot"></i>
+                <h1>Admin - Susan Coffee & Tea</h1>
+            </div>
+
+            <nav>
+                <a href="index.html"><i class="fas fa-home"></i><span>Trang chủ</span></a>
+                <a href="products.html"><i class="fas fa-box"></i><span>Sản phẩm</span></a>
+                <a href="categories.html"><i class="fas fa-tags"></i><span>Danh mục</span></a>
+                <a href="orders.html"><i class="fas fa-receipt"></i><span>Đơn hàng</span></a>
+                <a href="users.html"><i class="fas fa-users"></i><span>Người dùng</span></a>
+                <a href="login.html" id="logout-btn"><i class="fas fa-sign-out-alt"></i><span>Đăng xuất</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <h2>Quản lý sản phẩm</h2><br>
+        
+        <form id="product-form" class="product-form">
+            <input type="hidden" id="product-id">
+            <div class="form-row">
+                <label>Tên sản phẩm:</label>
+                <input type="text" id="product-name" required>
+            </div>
+            <div class="form-row">
+                <label>Giá:</label>
+                <input type="text" id="product-price" placeholder="Ví dụ: 10000 hoặc 10.000đ" required>
+            </div>
+            <div class="form-row">
+                <label>Danh mục:</label>
+                <select id="product-cate" required></select>
+            </div>
+            <div class="form-row">
+                <label>Mô tả:</label>
+                <input type="text" id="product-detail" required>
+            </div>
+            <div class="form-row">
+                <label>Hình ảnh (Khuyên dùng: chọn file có sẵn trong mục images):</label>
+                <input type="file" id="product-image-file" accept="image/*">
+                <p id="current-image-name" style="font-size: 13px; color: #888; margin-top: 5px;"></p>
+                <input type="hidden" id="product-image-hidden">
+            </div>
+            <button type="submit" class="btn-save">Lưu</button>
+            <button type="button" class="btn-reset" id="reset-form">Nhập mới</button>
+        </form>
+
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Hình ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Danh mục</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody id="product-list"></tbody>
+        </table>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Susan Coffee & Tea - Trang quản trị</p>
+            <p class="made-with-love">Made with <i class="fas fa-heart" style="color:#e74c3c"></i> & <i class="fas fa-coffee" style="color:#8B4513"></i></p>
+            <a href="../users/index.html">Về trang người dùng</a>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+</body>
+</html>
