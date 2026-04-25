@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanh toán - Susan Coffee &amp; Tea</title>
+  <link rel="stylesheet" href="../styles/shared.css">
+  <link rel="stylesheet" href="../styles/checkout.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-mug-hot"></i>
+        <h1>Susan Coffee &amp; Tea</h1>
+      </a>
+      <nav>
+        <a href="index.html"><i class="fas fa-home"></i><span>Trang chủ</span></a>
+        <a href="account.html"><i class="fas fa-user"></i><span>Tài khoản</span></a>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>Giỏ hàng</span></a>
+        <a href="order.html"><i class="fas fa-receipt"></i><span>Đơn hàng</span></a>
+      </nav>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Tìm kiếm...">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="checkout-container">
+    <h2><i class="fas fa-credit-card"></i> Thanh toán</h2>
+
+    <form id="checkout-form">
+      <div class="checkout-grid">
+        <!-- Customer Info -->
+        <div class="checkout-section">
+          <h3><i class="fas fa-user"></i> Thông tin nhận hàng</h3>
+          <label>Họ và tên *</label>
+          <input type="text" id="name" placeholder="Nguyễn Văn A" required>
+          <label>Email *</label>
+          <input type="email" id="email" placeholder="example@gmail.com" required>
+          <label>Số điện thoại *</label>
+          <input type="tel" id="phone" placeholder="096.1111.913 " required>
+          <label>Địa chỉ giao hàng *</label>
+          <input type="text" id="address" placeholder="Bình Sơn, Quảng Ngãi" required>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="checkout-section order-summary">
+          <h3><i class="fas fa-list"></i> Đơn hàng của bạn</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Sản phẩm</th>
+                <th>Ảnh</th>
+                <th>Giá</th>
+                <th>SL</th>
+                <th>Tiền</th>
+              </tr>
+            </thead>
+            <tbody id="checkout-items"></tbody>
+          </table>
+          <div class="checkout-total">
+            <span class="label">Tổng thanh toán:</span>
+            <span class="amount" id="checkout-total">0 ₫</span>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <div class="checkout-submit">
+          <button type="submit">
+            <i class="fas fa-check-circle"></i> Xác nhận đặt hàng
+          </button>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3><i class="fas fa-store"></i> Susan Coffee &amp; Tea</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Bình Sơn, Quảng Ngãi </p>
+        <p><i class="fas fa-phone"></i> 096.1111.913 </p>
+        <p><i class="fas fa-envelope"></i> susan.coffee@gmail.com</p>
+      </div>
+      <div class="footer-section">
+        <h3><i class="fas fa-shield-alt"></i> Cam kết</h3>
+        <p><i class="fas fa-lock"></i> Thanh toán an toàn</p>
+        <p><i class="fas fa-truck"></i> Giao hàng nhanh chóng</p>
+        <p><i class="fas fa-star"></i> Chất lượng đảm bảo</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Susan Coffee &amp; Tea. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/api.js"></script>
+  <script src="../js/checkout.js"></script>
+</body>
+</html>

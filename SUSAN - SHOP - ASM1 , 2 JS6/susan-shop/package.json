@@ -1,0 +1,16 @@
+{
+  "name": "susan-shop",
+  "version": "1.0.0",
+  "description": "Website bán cà phê và trà sữa với giao diện màu hồng chuyên nghiệp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

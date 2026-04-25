@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ hàng - Susan Coffee &amp; Tea</title>
+  <link rel="stylesheet" href="../styles/shared.css">
+  <link rel="stylesheet" href="../styles/cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-mug-hot"></i>
+        <h1>Susan Coffee &amp; Tea</h1>
+      </a>
+      <nav>
+        <a href="index.html"><i class="fas fa-home"></i><span>Trang chủ</span></a>
+        <a href="account.html"><i class="fas fa-user"></i><span>Tài khoản</span></a>
+        <a href="cart.html" class="active"><i class="fas fa-shopping-cart"></i><span>Giỏ hàng</span></a>
+        <a href="order.html"><i class="fas fa-receipt"></i><span>Đơn hàng</span></a>
+      </nav>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Tìm kiếm...">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="cart-container">
+    <h2><i class="fas fa-shopping-cart"></i> Giỏ hàng của bạn</h2>
+
+    <div id="empty-cart" class="empty-state" style="display:none">
+      <i class="fas fa-shopping-cart"></i>
+      <p style="font-size:1.1rem;font-weight:700;color:var(--pink-700)">Giỏ hàng đang trống</p>
+      <p>Hãy khám phá thực đơn và chọn món yêu thích!</p>
+      <a href="index.html" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;padding:11px 28px;background:linear-gradient(135deg,var(--pink-500),var(--pink-600));color:white;border-radius:9999px;text-decoration:none;font-weight:700;font-size:0.9rem">
+        <i class="fas fa-shopping-bag"></i> Xem thực đơn
+      </a>
+    </div>
+
+    <div id="cart-card" class="cart-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Ảnh</th>
+            <th>Sản phẩm</th>
+            <th>Đơn giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+            <th>Xóa</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+      </table>
+      <div class="cart-footer">
+        <div class="cart-total">
+          Tổng cộng: <span id="cart-total-amount">0 ₫</span>
+        </div>
+        <div class="cart-actions">
+          <a href="index.html" style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:var(--pink-100);color:var(--pink-700);border-radius:9999px;text-decoration:none;font-weight:700;font-size:0.88rem;transition:all 0.3s">
+            <i class="fas fa-arrow-left"></i> Tiếp tục mua
+          </a>
+          <a href="checkout.html" class="checkout-btn">
+            <i class="fas fa-credit-card"></i> Thanh toán
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3><i class="fas fa-store"></i> Susan Coffee &amp; Tea</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Bình Sơn, Quảng Ngãi </p>
+        <p><i class="fas fa-phone"></i> 096.1111.913 </p>
+      </div>
+      <div class="footer-section">
+        <h3><i class="fas fa-headset"></i> Hỗ trợ</h3>
+        <a href="index.html"><i class="fas fa-home"></i> Trang chủ</a>
+        <a href="order.html"><i class="fas fa-receipt"></i> Đơn hàng</a>
+        <a href="login.html"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Susan Coffee &amp; Tea. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/api.js"></script>
+  <script src="../js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý danh mục - Susan Admin</title>
+  <link rel="stylesheet" href="../styles/shared.css">
+  <link rel="stylesheet" href="../styles/admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="admin-body">
+  <div class="admin-wrapper">
+    <aside class="admin-sidebar">
+      <div class="sidebar-logo"><i class="fas fa-mug-hot"></i><span>Susan Admin</span></div>
+      <nav class="sidebar-nav">
+        <a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="products.html"><i class="fas fa-box"></i> Sản phẩm</a>
+        <a href="categories.html" class="active"><i class="fas fa-tags"></i> Danh mục</a>
+        <a href="orders.html"><i class="fas fa-receipt"></i> Đơn hàng</a>
+        <a href="users.html"><i class="fas fa-users"></i> Người dùng</a>
+        <a href="../users/index.html"><i class="fas fa-store"></i> Xem cửa hàng</a>
+      </nav>
+      <div class="sidebar-logout">
+        <button id="logout-btn"><i class="fas fa-sign-out-alt"></i> Đăng xuất</button>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+      <div class="admin-topbar">
+        <h1><i class="fas fa-tags"></i> Quản lý danh mục</h1>
+        <button class="btn-add" onclick="showAddForm()">
+          <i class="fas fa-plus"></i> Thêm danh mục
+        </button>
+      </div>
+
+      <!-- Add/Edit Form -->
+      <div id="form-add" class="admin-panel" style="display:none;margin-bottom:20px">
+        <div class="panel-header">
+          <h3 id="form-cate-title"><i class="fas fa-plus"></i> Thêm danh mục mới</h3>
+        </div>
+        <div class="panel-body">
+          <div class="form-group" style="max-width:400px">
+            <label><i class="fas fa-tag"></i> Tên danh mục *</label>
+            <input type="text" id="cate-name" placeholder="Ví dụ: Cà phê, Trà sữa...">
+          </div>
+          <div class="form-actions">
+            <button class="btn-save" onclick="saveCategory()"><i class="fas fa-save"></i> Lưu danh mục</button>
+            <button class="btn-cancel" onclick="document.getElementById('form-add').style.display='none'"><i class="fas fa-times"></i> Hủy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category Table -->
+      <div class="admin-panel">
+        <div class="panel-header"><h3><i class="fas fa-list"></i> Danh sách danh mục</h3></div>
+        <div class="panel-body" style="padding:0">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Tên danh mục</th>
+                <th>Danh mục cha</th>
+                <th>Hành động</th>
+              </tr>
+            </thead>
+            <tbody id="category-list">
+              <tr><td colspan="4" style="text-align:center;padding:30px"><div class="spinner" style="margin:0 auto"></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/categories.js"></script>
+</body>
+</html>
