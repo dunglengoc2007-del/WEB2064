@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Susan Admin</title>
+  <link rel="stylesheet" href="../styles/shared.css">
+  <link rel="stylesheet" href="../styles/admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="admin-body">
+  <div class="admin-wrapper">`
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+      <div class="sidebar-logo">
+        <i class="fas fa-mug-hot"></i>
+        <span>Susan Admin</span>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="index.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="products.html"><i class="fas fa-box"></i> Sản phẩm</a>
+        <a href="categories.html"><i class="fas fa-tags"></i> Danh mục</a>
+        <a href="orders.html"><i class="fas fa-receipt"></i> Đơn hàng</a>
+        <a href="users.html"><i class="fas fa-users"></i> Người dùng</a>
+        <a href="../users/index.html"><i class="fas fa-store"></i> Xem cửa hàng</a>
+      </nav>
+      <div class="sidebar-logout">
+        <button id="logout-btn"><i class="fas fa-sign-out-alt"></i> Đăng xuất</button>
+      </div>
+    </aside>
+    <main class="admin-main">
+      <div class="admin-topbar">
+        <h1><i class="fas fa-tachometer-alt"></i> Dashboard</h1>
+        <div class="topbar-right">
+          <span><i class="fas fa-circle" style="color:#10b981;margin-right:5px;font-size:0.7rem"></i>Online</span>
+          <span class="admin-badge"><i class="fas fa-shield-alt"></i> Admin</span>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon" style="background:linear-gradient(135deg,#ec4899,#f43f5e)"><i class="fas fa-tags"></i></div>
+          <div class="stat-info">
+            <div class="stat-number" id="total-categories">—</div>
+            <div class="stat-label">Danh mục</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon" style="background:linear-gradient(135deg,#a855f7,#ec4899)"><i class="fas fa-box"></i></div>
+          <div class="stat-info">
+            <div class="stat-number" id="total-products">—</div>
+            <div class="stat-label">Sản phẩm</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon" style="background:linear-gradient(135deg,#3b82f6,#a855f7)"><i class="fas fa-users"></i></div>
+          <div class="stat-info">
+            <div class="stat-number" id="total-users">—</div>
+            <div class="stat-label">Người dùng</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon" style="background:linear-gradient(135deg,#10b981,#3b82f6)"><i class="fas fa-receipt"></i></div>
+          <div class="stat-info">
+            <div class="stat-number" id="total-orders">—</div>
+            <div class="stat-label">Đơn hàng</div>
+          </div>
+        </div>
+        <div class="stat-card stat-wide">
+          <div class="stat-icon" style="background:linear-gradient(135deg,#f59e0b,#10b981)"><i class="fas fa-coins"></i></div>
+          <div class="stat-info">
+            <div class="stat-number" id="total-revenue" style="font-size:1.4rem">—</div>
+            <div class="stat-label">Tổng doanh thu</div>
+          </div>
+        </div>
+      </div>
+      <div class="admin-content-grid">
+        <div class="admin-panel">
+          <div class="panel-header"><h3><i class="fas fa-chart-bar"></i> Sản phẩm theo danh mục</h3></div>
+          <div class="panel-body" style="padding:20px">
+            <canvas id="categoryChart" style="max-height:280px"></canvas>
+          </div>
+        </div>
+        <div class="admin-panel">
+          <div class="panel-header"><h3><i class="fas fa-exclamation-triangle" style="color:#f59e0b"></i> Sắp hết hàng</h3></div>
+          <div class="panel-body">
+            <ul id="low-stock-list" style="list-style:none;padding:16px;display:flex;flex-direction:column;gap:8px"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="admin-panel" style="margin-top:20px">
+        <div class="panel-header">
+          <h3><i class="fas fa-receipt"></i> Đơn hàng gần đây</h3>
+          <a href="orders.html" style="color:var(--pink-600);font-weight:600;font-size:0.85rem;text-decoration:none">Xem tất cả <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="panel-body" style="padding:0">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Mã đơn</th>
+                <th>Khách hàng</th>
+                <th>Tổng tiền</th>
+                <th>Ngày đặt</th>
+                <th>Trạng thái</th>
+              </tr>
+            </thead>
+            <tbody id="order-list">
+              <tr><td colspan="5" style="text-align:center;padding:20px"><div class="spinner" style="margin:0 auto"></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>

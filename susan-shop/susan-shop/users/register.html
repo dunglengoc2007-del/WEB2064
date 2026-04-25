@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký - Susan Coffee &amp; Tea</title>
+  <link rel="stylesheet" href="../styles/shared.css">
+  <link rel="stylesheet" href="../styles/auth.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-mug-hot"></i>
+        <h1>Susan Coffee &amp; Tea</h1>
+      </a>
+      <nav>
+        <a href="index.html"><i class="fas fa-home"></i><span>Trang chủ</span></a>
+        <a href="login.html"><i class="fas fa-sign-in-alt"></i><span>Đăng nhập</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="auth-container">
+    <div class="auth-card">
+      <div class="auth-logo">
+        <div class="logo-icon"><i class="fas fa-user-plus"></i></div>
+        <h2>Tạo tài khoản mới</h2>
+        <p>Tham gia cộng đồng Susan Coffee &amp; Tea</p>
+      </div>
+
+      <form id="register-form">
+        <div class="form-group">
+          <label><i class="fas fa-user"></i> Họ và tên *</label>
+          <input type="text" id="name" placeholder="Nguyễn Văn A" required>
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-envelope"></i> Email *</label>
+          <input type="email" id="email" placeholder="example@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-lock"></i> Mật khẩu *</label>
+          <input type="password" id="password" placeholder="Tối thiểu 6 ký tự" required minlength="6">
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-phone"></i> Số điện thoại</label>
+          <input type="tel" id="phone" placeholder="0900 123 456">
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-map-marker-alt"></i> Địa chỉ</label>
+          <input type="text" id="address" placeholder="123 Đường ABC, Quận 1, TP.HCM">
+        </div>
+        <button type="submit" class="auth-btn">
+          <i class="fas fa-user-plus"></i> Đăng ký
+        </button>
+      </form>
+
+      <div class="auth-links">
+        <a href="login.html"><i class="fas fa-sign-in-alt"></i> Đã có tài khoản? Đăng nhập</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-bottom" style="text-align:center;padding:16px;color:var(--pink-200);font-size:0.85rem">
+      <p>&copy; 2026 Susan Coffee &amp; Tea. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/api.js"></script>
+  <script src="../js/register.js"></script>
+</body>
+</html>

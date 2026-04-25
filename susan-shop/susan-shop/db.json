@@ -1,0 +1,623 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Cà phê",
+      "parent_id": null
+    },
+    {
+      "id": "2",
+      "name": "Trà sữa",
+      "parent_id": null
+    },
+    {
+      "id": "3",
+      "name": "Trà trái cây",
+      "parent_id": null
+    },
+    {
+      "id": "4",
+      "name": "Đồ ăn vặt",
+      "parent_id": null
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Cà phê sữa",
+      "price": 20000,
+      "cate_id": 1,
+      "detail": "Ngon đậm đà",
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "2",
+      "name": "Cà phê đen",
+      "price": 18000,
+      "cate_id": 1,
+      "detail": "Đậm vị truyền thống",
+      "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "3",
+      "name": "Bạc xỉu",
+      "price": 25000,
+      "cate_id": 1,
+      "detail": "Ngọt béo vị sữa",
+      "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "4",
+      "name": "Cappuccino",
+      "price": 35000,
+      "cate_id": 1,
+      "detail": "Phong cách Ý cổ điển",
+      "image": "https://images.unsplash.com/photo-1534687941688-651ccaafbff8?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "5",
+      "name": "Espresso",
+      "price": 30000,
+      "cate_id": 1,
+      "detail": "Đậm đặc, thơm nồng",
+      "image": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "6",
+      "name": "Trà sữa trân châu",
+      "price": 30000,
+      "cate_id": 2,
+      "detail": "Trân châu dẻo, sữa béo",
+      "image": "https://images.unsplash.com/photo-1558857563-c0c3e6e6e87e?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "7",
+      "name": "Trà sữa matcha",
+      "price": 35000,
+      "cate_id": 2,
+      "detail": "Hương matcha Nhật Bản",
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "8",
+      "name": "Trà sữa khoai môn",
+      "price": 33000,
+      "cate_id": 2,
+      "detail": "Béo thơm vị khoai môn",
+      "image": "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "9",
+      "name": "Trà sữa Thái Xanh",
+      "price": 30000,
+      "cate_id": 2,
+      "detail": "Đậm vị trà Thái",
+      "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "10",
+      "name": "Trà sữa socola",
+      "price": 32000,
+      "cate_id": 2,
+      "detail": "Ngọt nhẹ, vị cacao",
+      "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "11",
+      "name": "Trà đào cam sả",
+      "price": 30000,
+      "cate_id": 3,
+      "detail": "Tươi mát, thanh vị",
+      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "12",
+      "name": "Trà vải",
+      "price": 28000,
+      "cate_id": 3,
+      "detail": "Thơm ngọt vị vải",
+      "image": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "13",
+      "name": "Trà chanh mật ong",
+      "price": 27000,
+      "cate_id": 3,
+      "detail": "Giải khát, thanh lọc",
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "14",
+      "name": "Trà xoài",
+      "price": 29000,
+      "cate_id": 3,
+      "detail": "Ngọt dịu vị xoài chín",
+      "image": "https://images.unsplash.com/photo-1512558289855-7b58de32ce7d?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "15",
+      "name": "Trà việt quất",
+      "price": 33000,
+      "cate_id": 3,
+      "detail": "Đậm hương việt quất",
+      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "16",
+      "name": "Bánh tráng trộn",
+      "price": 25000,
+      "cate_id": 4,
+      "detail": "Đậm đà, giòn ngon",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "17",
+      "name": "Phô mai que",
+      "price": 20000,
+      "cate_id": 4,
+      "detail": "Giòn tan, kéo sợi",
+      "image": "https://images.unsplash.com/photo-1565299715199-866c917206bb?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "18",
+      "name": "Cá viên chiên",
+      "price": 15000,
+      "cate_id": 4,
+      "detail": "Nóng hổi, giòn đều",
+      "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "19",
+      "name": "Khoai tây chiên",
+      "price": 22000,
+      "cate_id": 4,
+      "detail": "Giòn vàng, thơm béo",
+      "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "20",
+      "name": "Tôm viên chiên",
+      "price": 28000,
+      "cate_id": 4,
+      "detail": "Tươi ngon, đậm vị",
+      "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&h=300&fit=crop"
+    }
+  ],
+  "product_variants": [
+    {
+      "id": "1",
+      "product_id": "1",
+      "variant_name": "Size S",
+      "price": 18000,
+      "quantity": 50
+    },
+    {
+      "id": "2",
+      "product_id": "1",
+      "variant_name": "Size M",
+      "price": 20000,
+      "quantity": 50
+    },
+    {
+      "id": "3",
+      "product_id": "1",
+      "variant_name": "Size L",
+      "price": 25000,
+      "quantity": 50
+    },
+    {
+      "id": "4",
+      "product_id": "2",
+      "variant_name": "Size S",
+      "price": 16000,
+      "quantity": 50
+    },
+    {
+      "id": "5",
+      "product_id": "2",
+      "variant_name": "Size M",
+      "price": 18000,
+      "quantity": 50
+    },
+    {
+      "id": "6",
+      "product_id": "2",
+      "variant_name": "Size L",
+      "price": 22000,
+      "quantity": 50
+    },
+    {
+      "id": "7",
+      "product_id": "3",
+      "variant_name": "Size S",
+      "price": 22000,
+      "quantity": 40
+    },
+    {
+      "id": "8",
+      "product_id": "3",
+      "variant_name": "Size M",
+      "price": 25000,
+      "quantity": 40
+    },
+    {
+      "id": "9",
+      "product_id": "3",
+      "variant_name": "Size L",
+      "price": 30000,
+      "quantity": 40
+    },
+    {
+      "id": "10",
+      "product_id": "4",
+      "variant_name": "Size S",
+      "price": 30000,
+      "quantity": 30
+    },
+    {
+      "id": "11",
+      "product_id": "4",
+      "variant_name": "Size M",
+      "price": 35000,
+      "quantity": 30
+    },
+    {
+      "id": "12",
+      "product_id": "4",
+      "variant_name": "Size L",
+      "price": 42000,
+      "quantity": 30
+    },
+    {
+      "id": "13",
+      "product_id": "5",
+      "variant_name": "Size S",
+      "price": 25000,
+      "quantity": 35
+    },
+    {
+      "id": "14",
+      "product_id": "5",
+      "variant_name": "Size M",
+      "price": 30000,
+      "quantity": 35
+    },
+    {
+      "id": "15",
+      "product_id": "5",
+      "variant_name": "Size L",
+      "price": 38000,
+      "quantity": 35
+    },
+    {
+      "id": "16",
+      "product_id": "6",
+      "variant_name": "Size S",
+      "price": 25000,
+      "quantity": 60
+    },
+    {
+      "id": "17",
+      "product_id": "6",
+      "variant_name": "Size M",
+      "price": 30000,
+      "quantity": 60
+    },
+    {
+      "id": "18",
+      "product_id": "6",
+      "variant_name": "Size L",
+      "price": 35000,
+      "quantity": 60
+    },
+    {
+      "id": "19",
+      "product_id": "7",
+      "variant_name": "Size S",
+      "price": 30000,
+      "quantity": 45
+    },
+    {
+      "id": "20",
+      "product_id": "7",
+      "variant_name": "Size M",
+      "price": 35000,
+      "quantity": 45
+    },
+    {
+      "id": "21",
+      "product_id": "7",
+      "variant_name": "Size L",
+      "price": 40000,
+      "quantity": 45
+    },
+    {
+      "id": "22",
+      "product_id": "8",
+      "variant_name": "Size S",
+      "price": 28000,
+      "quantity": 40
+    },
+    {
+      "id": "23",
+      "product_id": "8",
+      "variant_name": "Size M",
+      "price": 33000,
+      "quantity": 40
+    },
+    {
+      "id": "24",
+      "product_id": "8",
+      "variant_name": "Size L",
+      "price": 38000,
+      "quantity": 40
+    },
+    {
+      "id": "25",
+      "product_id": "9",
+      "variant_name": "Size S",
+      "price": 25000,
+      "quantity": 50
+    },
+    {
+      "id": "26",
+      "product_id": "9",
+      "variant_name": "Size M",
+      "price": 30000,
+      "quantity": 50
+    },
+    {
+      "id": "27",
+      "product_id": "9",
+      "variant_name": "Size L",
+      "price": 35000,
+      "quantity": 50
+    },
+    {
+      "id": "28",
+      "product_id": "10",
+      "variant_name": "Size S",
+      "price": 27000,
+      "quantity": 45
+    },
+    {
+      "id": "29",
+      "product_id": "10",
+      "variant_name": "Size M",
+      "price": 32000,
+      "quantity": 45
+    },
+    {
+      "id": "30",
+      "product_id": "10",
+      "variant_name": "Size L",
+      "price": 37000,
+      "quantity": 45
+    },
+    {
+      "id": "31",
+      "product_id": "11",
+      "variant_name": "Size S",
+      "price": 25000,
+      "quantity": 55
+    },
+    {
+      "id": "32",
+      "product_id": "11",
+      "variant_name": "Size M",
+      "price": 30000,
+      "quantity": 55
+    },
+    {
+      "id": "33",
+      "product_id": "11",
+      "variant_name": "Size L",
+      "price": 35000,
+      "quantity": 55
+    },
+    {
+      "id": "34",
+      "product_id": "12",
+      "variant_name": "Size S",
+      "price": 23000,
+      "quantity": 50
+    },
+    {
+      "id": "35",
+      "product_id": "12",
+      "variant_name": "Size M",
+      "price": 28000,
+      "quantity": 50
+    },
+    {
+      "id": "36",
+      "product_id": "12",
+      "variant_name": "Size L",
+      "price": 33000,
+      "quantity": 50
+    },
+    {
+      "id": "37",
+      "product_id": "13",
+      "variant_name": "Size S",
+      "price": 22000,
+      "quantity": 60
+    },
+    {
+      "id": "38",
+      "product_id": "13",
+      "variant_name": "Size M",
+      "price": 27000,
+      "quantity": 60
+    },
+    {
+      "id": "39",
+      "product_id": "13",
+      "variant_name": "Size L",
+      "price": 32000,
+      "quantity": 60
+    },
+    {
+      "id": "40",
+      "product_id": "14",
+      "variant_name": "Size S",
+      "price": 24000,
+      "quantity": 50
+    },
+    {
+      "id": "41",
+      "product_id": "14",
+      "variant_name": "Size M",
+      "price": 29000,
+      "quantity": 50
+    },
+    {
+      "id": "42",
+      "product_id": "14",
+      "variant_name": "Size L",
+      "price": 34000,
+      "quantity": 50
+    },
+    {
+      "id": "43",
+      "product_id": "15",
+      "variant_name": "Size S",
+      "price": 28000,
+      "quantity": 45
+    },
+    {
+      "id": "44",
+      "product_id": "15",
+      "variant_name": "Size M",
+      "price": 33000,
+      "quantity": 45
+    },
+    {
+      "id": "45",
+      "product_id": "15",
+      "variant_name": "Size L",
+      "price": 38000,
+      "quantity": 45
+    },
+    {
+      "id": "46",
+      "product_id": "16",
+      "variant_name": "Nhỏ",
+      "price": 20000,
+      "quantity": 80
+    },
+    {
+      "id": "47",
+      "product_id": "16",
+      "variant_name": "Lớn",
+      "price": 25000,
+      "quantity": 80
+    },
+    {
+      "id": "48",
+      "product_id": "17",
+      "variant_name": "5 que",
+      "price": 20000,
+      "quantity": 70
+    },
+    {
+      "id": "49",
+      "product_id": "17",
+      "variant_name": "10 que",
+      "price": 38000,
+      "quantity": 70
+    },
+    {
+      "id": "50",
+      "product_id": "18",
+      "variant_name": "5 viên",
+      "price": 15000,
+      "quantity": 100
+    },
+    {
+      "id": "51",
+      "product_id": "18",
+      "variant_name": "10 viên",
+      "price": 28000,
+      "quantity": 100
+    },
+    {
+      "id": "52",
+      "product_id": "19",
+      "variant_name": "Nhỏ",
+      "price": 18000,
+      "quantity": 80
+    },
+    {
+      "id": "53",
+      "product_id": "19",
+      "variant_name": "Lớn",
+      "price": 22000,
+      "quantity": 80
+    },
+    {
+      "id": "54",
+      "product_id": "20",
+      "variant_name": "5 viên",
+      "price": 22000,
+      "quantity": 60
+    },
+    {
+      "id": "55",
+      "product_id": "20",
+      "variant_name": "10 viên",
+      "price": 28000,
+      "quantity": 60
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin Susan",
+      "email": "admin@susan.com",
+      "password": "admin123",
+      "phone": "0900123456",
+      "address": "123 Đường ABC, Quận 1, TP.HCM",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Nguyễn Văn A",
+      "email": "user@susan.com",
+      "password": "user123",
+      "phone": "0911222333",
+      "address": "456 Đường XYZ, Quận 3, TP.HCM",
+      "role": "user"
+    },
+    {
+      "name": "Admin Susan",
+      "email": "abc123@gmail.com",
+      "password": "admin123",
+      "phone": "0900123456",
+      "address": "123 Đường ABC, Quận 1, TP.HCM",
+      "role": "user",
+      "id": "Ns6FF0xjELg"
+    },
+    {
+      "name": "LÊ ĐỨC TRI",
+      "email": "trung15@gmail.com",
+      "password": "trung15@gmail.com",
+      "phone": "0395473533",
+      "address": "123 Đường ABC, Quận 1, TP.HCM",
+      "role": "user",
+      "id": "JJKGbKSRUws"
+    },
+    {
+      "name": "Nguyễn Hoàng Sơn",
+      "email": "hson97805@gmail.com",
+      "password": "123456",
+      "phone": "0974658853",
+      "address": "222",
+      "role": "user",
+      "id": "gCVca6NYcR8"
+    }
+  ],
+  "orders": [],
+  "order_details": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết sản phẩm - Susan Coffee &amp; Tea</title>
+  <link rel="stylesheet" href="../styles/shared.css">
+  <link rel="stylesheet" href="../styles/product_detail.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-mug-hot"></i>
+        <h1>Susan Coffee &amp; Tea</h1>
+      </a>
+      <nav>
+        <a href="index.html"><i class="fas fa-home"></i><span>Trang chủ</span></a>
+        <a href="account.html"><i class="fas fa-user"></i><span>Tài khoản</span></a>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>Giỏ hàng</span></a>
+        <a href="order.html"><i class="fas fa-receipt"></i><span>Đơn hàng</span></a>
+      </nav>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Tìm món uống yêu thích...">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="pd-container">
+    <div id="product-detail" class="pd-card">
+      <div class="loading"><div class="spinner"></div> Đang tải...</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3><i class="fas fa-store"></i> Susan Coffee &amp; Tea</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</p>
+        <p><i class="fas fa-phone"></i> 0900 123 456</p>
+      </div>
+      <div class="footer-section">
+        <h3><i class="fas fa-clock"></i> Giờ Mở Cửa</h3>
+        <p><i class="fas fa-calendar-day"></i> Thứ 2 - Thứ 6: 7:00 - 22:00</p>
+        <p><i class="fas fa-calendar-week"></i> Thứ 7 - CN: 8:00 - 23:00</p>
+      </div>
+      <div class="footer-section">
+        <h3><i class="fas fa-utensils"></i> Menu nhanh</h3>
+        <a href="index.html"><i class="fas fa-home"></i> Trang chủ</a>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a>
+        <a href="order.html"><i class="fas fa-receipt"></i> Đơn hàng</a>
+      </div>
+      <div class="footer-section">
+        <h3><i class="fas fa-share-alt"></i> Mạng xã hội</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Susan Coffee &amp; Tea. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/api.js"></script>
+  <script src="../js/product_detail.js"></script>
+</body>
+</html>
